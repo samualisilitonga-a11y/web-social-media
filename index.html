@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Utama Web Social Media</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+
+    <script defer>
+        if (!localStorage.getItem("isLogin")) {
+            window.location.href = "login.html";
+        }
+
+        function logout() {
+            localStorage.removeItem("isLogin");
+            window.location.href = "login.html";
+        }
+    </script>
+
+</head>
+<body>
+
+<header>
+    <h1>Website Social Media Instagram</h1>
+    <nav>
+        <a href="evaluasi.html">Evaluasi</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Daftar Menu Utama</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Akun Instagram Samuali</h3>
+            <a href="anggota1.html">Lihat Profil</a>
+        </div>
+
+        <div class="card">
+            <h3>Akun Instagram Valdy</h3>
+            <a href="anggota2.html">Lihat Profil</a>
+        </div>
+
+        <div class="card">
+            <h3>Akun Instagram Beto</h3>
+            <a href="anggota3.html">Lihat Profil</a>
+        </div>
+
+        <div class="card">
+            <h3>Akun Instagram Moris</h3>
+            <a href="anggota4.html">Lihat Profil</a>
+        </div>
+
+        <div class="card">
+            <h3>Akun Instagram Samuel</h3>
+            <a href="anggota5.html">Lihat Profil</a>
+        </div>
+
+        <div class="card">
+            <h3>Akun Instagram Julio</h3>
+            <a href="anggota6.html">Lihat Profil</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>Kelompok Web Social Media | 2025</p>
+</footer>
+
+</body>
+</html>
